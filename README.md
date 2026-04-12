@@ -40,7 +40,13 @@ http://localhost:3000
 * State management with useState
 * Side effects with useEffect
 * Conditional rendering
-* Derived state (task filtering)
+* Derived state (task filtering)4
+  
+## AI Usage Log
+
+- Used ChatGPT to debug Next.js Turbopack error and fix import paths
+- Used AI to understand hydration errors and localStorage handling
+- Modified all generated code and added comments to ensure understanding
 
 ## Notes
 
