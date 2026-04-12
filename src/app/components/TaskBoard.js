@@ -1,16 +1,16 @@
-// ══════════════════════════════════════════════════════
 // COMPONENT: TaskBoard
 // PURPOSE:  Stores all task data and controls the main
 //           app logic. This component owns the task list,
 //           filter state, and persistence logic.
 // TYPE:     Client Component — uses useState + useEffect
-// ══════════════════════════════════════════════════════
+
 
 'use client';
 
 import { useEffect, useState } from 'react';
 import AddTaskForm from './AddTaskForm';
 import TaskList from './TaskList';
+import TaskStats from './TaskStats';
 
 const defaultTasks = [
   { id: 't1', title: 'Buy milk', done: false },
@@ -106,18 +106,12 @@ export default function TaskBoard() {
 
   return (
     <div className="mx-auto mt-10 max-w-lg rounded-lg bg-gray-900 p-6 text-white">
-      <div className="mb-4 flex items-center justify-between">
-        <p className="text-sm text-gray-300">
-          {completedCount} of {tasks.length} complete
-        </p>
-
-        <button
-          onClick={handleClearCompleted}
-          className="text-sm text-red-400 hover:underline"
-        >
-          Clear completed
-        </button>
-      </div>
+     <TaskStats
+  total={tasks.length}
+  completed={completedCount}
+  active={tasks.length - completedCount}
+  onClearCompleted={handleClearCompleted}
+/>
 
       <AddTaskForm onAdd={handleAdd} />
 
