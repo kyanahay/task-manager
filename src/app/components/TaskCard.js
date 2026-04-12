@@ -17,7 +17,7 @@ export default function TaskCard({ title, done, id, onToggle, onDelete }) {
     <div className="flex items-center justify-between border-b p-3">
       {/* The text style changes based on done so the user gets
           immediate visual feedback about completion status. */}
-      <span className={done ? 'text-gray-400 line-through' : 'text-gray-900'}>
+      <span className={done ? 'text-gray-400 line-through' : 'text-white'}> 
         {title}
       </span>
 
