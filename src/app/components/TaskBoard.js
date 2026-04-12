@@ -4,7 +4,6 @@
 //           filter state, and persistence logic.
 // TYPE:     Client Component — uses useState + useEffect
 
-
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -106,15 +105,17 @@ export default function TaskBoard() {
 
   return (
     <div className="mx-auto mt-10 max-w-lg rounded-lg bg-gray-900 p-6 text-white">
-     <TaskStats
-  total={tasks.length}
-  completed={completedCount}
-  active={tasks.length - completedCount}
-  onClearCompleted={handleClearCompleted}
-/>
+      <TaskStats
+        total={tasks.length}
+        completed={completedCount}
+        active={tasks.length - completedCount}
+        onClearCompleted={handleClearCompleted}
+      />
 
       <AddTaskForm onAdd={handleAdd} />
 
+      {/* These buttons do not change the underlying data.
+          They only change which subset of tasks is visible. */}
       <div className="mb-4 flex gap-2">
         {['all', 'active', 'done'].map((f) => (
           <button
