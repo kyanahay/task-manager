@@ -1,7 +1,9 @@
+// ══════════════════════════════════════════════════════
 // COMPONENT: TaskStats
 // PURPOSE:  Displays live task counts and provides a button
 //           to clear all completed tasks at once.
 // TYPE:     Client Component — uses onClick handler═══
+// ══════════════════════════════════════════════════════
 
 'use client';
 
