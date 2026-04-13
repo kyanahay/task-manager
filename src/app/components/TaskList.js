@@ -1,10 +1,10 @@
-// ══════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════
 // COMPONENT: TaskList
 // PURPOSE:  Renders the current visible task list and passes
 //           task data down to TaskCard one item at a time.
 // TYPE:     Client/Presentational Component — receives data
 //           and callbacks through props
-// ══════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════
 
 import TaskCard from './TaskCard';
 
