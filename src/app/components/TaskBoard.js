@@ -1,8 +1,10 @@
+// ══════════════════════════════════════════════════════
 // COMPONENT: TaskBoard
 // PURPOSE:  Stores all task data and controls the main
 //           app logic. This component owns the task list,
 //           filter state, and persistence logic.
 // TYPE:     Client Component — uses useState + useEffect
+// ══════════════════════════════════════════════════════
 
 'use client';
 
