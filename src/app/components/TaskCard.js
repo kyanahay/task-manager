@@ -1,7 +1,9 @@
+// ══════════════════════════════════════════════════════
 // COMPONENT: TaskCard
 // PURPOSE:  Displays one task row and sends user actions
 //           back up to TaskBoard through callback props.
 // TYPE:     Client Component — uses onClick handlers
+// ══════════════════════════════════════════════════════
 
 
 'use client';
