@@ -1,7 +1,9 @@
+// ══════════════════════════════════════════════════════
 // COMPONENT: AddTaskForm
 // PURPOSE:  Collects a new task title from the user and
 //           sends it upward to TaskBoard through onAdd.
 // TYPE:     Client Component — uses useState and form events
+// ══════════════════════════════════════════════════════
 
 
 'use client';
