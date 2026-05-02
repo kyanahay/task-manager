@@ -52,3 +52,5 @@ http://localhost:3000
 
 This project was built as part of a React/Next.js learning module to demonstrate core frontend development concepts.
 
+## Author
+Kyana Hay
